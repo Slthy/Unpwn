@@ -8,23 +8,27 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var maiusc=true
-    @State private var min=true
+    //Toggle booleans
+    @State private var lowercase=true
+    @State private var uppercase=true
     @State private var numbers=true
     @State private var special = true
-    @State private var maiuscPicker = 0
-    @State private var minPicker = 0
-    @State private var numbersPicker = 0
-    @State private var specialPicker = 0
-    @State private var chars: Double = 0
+    
+    //@State private var uppercasePicker = 0
+    //@State private var lowercasePicker = 0
+    //@State private var numbersPicker = 0
+    //@State private var specialPicker = 0
+    //Variable that stores the number of characters selected by the user using the slider
+    @State private var numberOfCharacters: Double = 0
     let specialCharacters = ["!", ",", "#", "$", "%", "&", "(", ")", "*", "+", ",", "-", ".", "/", ":", ",", "<", "=", ">", "?", "@", "[", "^", "_", "{", "|", "}", "~"]
     
-    func check(maiusc: Bool, min: Bool, numbers: Bool, special: Bool) -> String {
+    //Funcion that checks the preferences of the user, giving a string as output
+    func check(uppercase: Bool, lowercase: Bool, numbers: Bool, special: Bool) -> String {
         var output=""
-        if maiusc {
+        if uppercase {
             output+="A"
         }
-        if min {
+        if lowercase {
             output+="a"
         }
         if numbers {
@@ -36,24 +40,19 @@ struct ContentView: View {
         return output
     }
     
+    //Variable displayed at the bottom
     var pwned: String {
-        let limit:Int = Int(chars)
         var selectedChars = ""
-        if (maiusc==false&&min==false&&numbers==false&&special==false){
+        if (uppercase==false&&lowercase==false&&numbers==false&&special==false){
+            //if every toggle is set to false (off), Unpwn will generate lowercase passwords
             selectedChars = "a"
         } else {
-            selectedChars = check(maiusc: maiusc, min: min, numbers: numbers, special: special)
+            selectedChars = check(uppercase: uppercase, lowercase: lowercase, numbers: numbers, special: special)
         }
         var output=""
-        var currentElement = ""
-        for _ in 0...limit {
-            if selectedChars.count>0 {
-                let currentType=Int.random(in: 0..<selectedChars.count)
-                currentElement=String(selectedChars[selectedChars.index(selectedChars.startIndex, offsetBy: currentType)])
-            } else {
-                currentElement = "a"
-            }
-            switch currentElement{
+        for _ in 0...Int(numberOfCharacters) {
+            //The switch will take one of the characters of selectedChars. selectedChars is the string with the user' preferences
+            switch String(selectedChars[selectedChars.index(selectedChars.startIndex, offsetBy: Int.random(in: 0..<selectedChars.count))]){
                 case "a":
                     output.append(String(describing: UnicodeScalar((Int.random(in: 0..<26) + 97))!))
                     break
@@ -64,15 +63,19 @@ struct ContentView: View {
                     output.append(String(describing: UnicodeScalar((Int.random(in: 0..<10) + 48))!))
                     break
                 case "s":
+                    //Because toRemoveOptionalString would print "Optional: x", Unpwn don't add directly the result to the finel output. First the "raw" value is stored in "toRemoveOptionalString"
                     let toRemoveOptionalString = (String(describing: UnicodeScalar(specialCharacters.randomElement()!)))
+                    //And then then only the 10th element is added to the output string
                     output.append(String(toRemoveOptionalString[toRemoveOptionalString.index(toRemoveOptionalString.startIndex, offsetBy: 10)]))
                     break
                 default:
                     break
             }
         }
+        //This copies to the clipboard every generated password
         let pasteboard = UIPasteboard.general
         pasteboard.string = output
+        
         return output
     }
 
@@ -80,21 +83,30 @@ struct ContentView: View {
         NavigationView{
             Form{
                 Section{
-                    Toggle(isOn: $maiusc) {
-                            Text("Enable maiuscole characters")
+                    
+                    //lowercases toggle
+                    Toggle(isOn: $lowercase) {
+                            Text("Enable lowercase characters")
                     }
-                    Toggle(isOn: $min) {
-                            Text("Enable minuscole characters")
+                    
+                    //uppercases toggle
+                    Toggle(isOn: $uppercase) {
+                            Text("Enable uppercase characters")
                     }
+                    
+                    //numbers toggle
                     Toggle(isOn: $numbers) {
                             Text("Enable numbers")
                     }
+                    
+                    //special characters toggle
                     Toggle(isOn: $special) {
                             Text("Enable special characters")
                     }
+                    
                 }
-                Section(header: Text("Numbers of characters: \(Int(chars))")){
-                    Slider(value: $chars, in: 0...64, step: 1)
+                Section(header: Text("Numbers of characters: \(Int(numberOfCharacters))")){
+                    Slider(value: $numberOfCharacters, in: 0...64, step: 1)
                     Text("\(String(pwned))")
                 }
             }
