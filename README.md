@@ -1,6 +1,4 @@
-# Unpwnd
-iOS Password generator
-=======
+
 # Unpwn
 _As simple as secure_
 
