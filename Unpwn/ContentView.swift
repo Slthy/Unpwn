@@ -14,10 +14,6 @@ struct ContentView: View {
     @State private var numbers=true
     @State private var special = true
     
-    //@State private var uppercasePicker = 0
-    //@State private var lowercasePicker = 0
-    //@State private var numbersPicker = 0
-    //@State private var specialPicker = 0
     //Variable that stores the number of characters selected by the user using the slider
     @State private var numberOfCharacters: Double = 0
     let specialCharacters = ["!", ",", "#", "$", "%", "&", "(", ")", "*", "+", ",", "-", ".", "/", ":", ",", "<", "=", ">", "?", "@", "[", "^", "_", "{", "|", "}", "~"]
