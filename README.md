@@ -1,13 +1,13 @@
-# Unpwnd
+# Unpwn
 _As simple as secure_
 
-**Unpwnd** is a simple iOS Password generator that helps to keep your' accounts safe from being pwned.  
+**Unpwn** is a simple iOS Password generator that helps to keep your' accounts safe from being pwned.  
 
 ## Versions
 ### Version 1.0 - Hello world update
 
-Unpwnd is born!  
-With a simple UI, Unpwnd comes to help people to secure their accounts, creating passwords based on user's preferences.  
+Unpwn is born!  
+With a simple UI, Unpwn comes to help people to secure their accounts, creating passwords based on user's preferences.  
 Every user can:
 
     1. Decide to use lowercase characters in their passwords
@@ -16,7 +16,7 @@ Every user can:
     4. Decide to use special characters in their passwords
     5. The password's length, from 1 to 64 characters
 
-At this part of the project, Unpwnd's development is currently more functionality-based than on the graphic side, but hang on, the future major-updates will be oriented to the graphic side
+At this part of the project, Unpwn's development is currently more functionality-based than on the graphic side, but hang on, the future major-updates will be oriented to the graphic side
 
 © Sloth.  
 
