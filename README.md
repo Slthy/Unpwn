@@ -2,10 +2,10 @@
 # Unpwn
 _As simple as secure_
 
-**Unpwn** is a simple iOS Password generator that helps to keep your accounts safe from being pwned.  
+**Unpwn** is a lightweight iOS Password manager that helps to keep your accounts safe from being pwned.  
 
 ## Versions
-### Version 1.0 - Hello world update
+### Version 1.0 - Hello world
 
 Unpwn is born!  
 With a simple UI, Unpwn comes to help people to secure their accounts, creating passwords based on user's preferences.  
@@ -21,8 +21,17 @@ At this part of the project, Unpwn's development is currently more functionality
 
 © Sloth.  
 
-### Version 1.1 - Comprehension update
+
+### Version 1.1 - Comprehension Update
 
 In this update the code has been commented as well as some words has been corrected.
+
+© Sloth. 
+
+
+### Version 2.0 - Slide and Check Update
+
+Hello everyone!
+In this update Unpwn gets rich of another feature: now you can check your own password if your password has been part of data breaches through _Have i been pwned?_'s database. But that's not all! Unpwn now has a new homepage that directs to every feature of the app.
 
 © Sloth. 
