@@ -3,107 +3,127 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72CB1B9225E1856D00408918 /* UnpwnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CB1B9125E1856D00408918 /* UnpwnApp.swift */; };
-		72CB1B9425E1856D00408918 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CB1B9325E1856D00408918 /* ContentView.swift */; };
-		72CB1B9625E1857300408918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72CB1B9525E1857300408918 /* Assets.xcassets */; };
-		72CB1B9925E1857300408918 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72CB1B9825E1857300408918 /* Preview Assets.xcassets */; };
+		721934FE25EAAB74004A7A25 /* aboutUnpwnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721934FD25EAAB74004A7A25 /* aboutUnpwnViewController.swift */; };
+		7259689925E965EA003665C9 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7259689825E965EA003665C9 /* SwiftyJSON */; };
+		7259689C25E96641003665C9 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259689B25E96641003665C9 /* SHA1.swift */; };
+		725968A725E9812D003665C9 /* apiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725968A625E9812D003665C9 /* apiView.swift */; };
+		725968AB25E988F5003665C9 /* generatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725968AA25E988F5003665C9 /* generatorView.swift */; };
+		725968AE25E989E7003665C9 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725968AD25E989E7003665C9 /* homeView.swift */; };
+		72BD51B325E9AB1100D57389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F5E6BC25E9653200F3DBCA /* Assets.xcassets */; };
+		72F5E6B425E9653100F3DBCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5E6B325E9653100F3DBCA /* AppDelegate.swift */; };
+		72F5E6B625E9653100F3DBCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5E6B525E9653100F3DBCA /* SceneDelegate.swift */; };
+		72F5E6B825E9653100F3DBCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5E6B725E9653100F3DBCA /* ViewController.swift */; };
+		72F5E6BB25E9653100F3DBCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F5E6B925E9653100F3DBCA /* Main.storyboard */; };
+		72F5E6C025E9653200F3DBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F5E6BE25E9653200F3DBCA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		72CB1B8E25E1856D00408918 /* Unpwn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unpwn.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		72CB1B9125E1856D00408918 /* UnpwnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnpwnApp.swift; sourceTree = "<group>"; };
-		72CB1B9325E1856D00408918 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		72CB1B9525E1857300408918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		72CB1B9825E1857300408918 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		72CB1B9A25E1857300408918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721934FA25EAA547004A7A25 /* Unpwn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Unpwn.entitlements; sourceTree = "<group>"; };
+		721934FD25EAAB74004A7A25 /* aboutUnpwnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutUnpwnViewController.swift; sourceTree = "<group>"; };
+		7259689B25E96641003665C9 /* SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
+		725968A625E9812D003665C9 /* apiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiView.swift; sourceTree = "<group>"; };
+		725968AA25E988F5003665C9 /* generatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generatorView.swift; sourceTree = "<group>"; };
+		725968AD25E989E7003665C9 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
+		72F5E6B025E9653100F3DBCA /* Unpwn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unpwn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F5E6B325E9653100F3DBCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72F5E6B525E9653100F3DBCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72F5E6B725E9653100F3DBCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72F5E6BA25E9653100F3DBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72F5E6BC25E9653200F3DBCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Unpwn/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		72F5E6BF25E9653200F3DBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72F5E6C125E9653300F3DBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		72CB1B8B25E1856D00408918 /* Frameworks */ = {
+		72F5E6AD25E9653100F3DBCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7259689925E965EA003665C9 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		72CB1B8525E1856C00408918 = {
+		72F5E6A725E9653100F3DBCA = {
 			isa = PBXGroup;
 			children = (
-				72CB1B9025E1856D00408918 /* Unpwn */,
-				72CB1B8F25E1856D00408918 /* Products */,
+				721934FA25EAA547004A7A25 /* Unpwn.entitlements */,
+				72F5E6B225E9653100F3DBCA /* Unpwn */,
+				72F5E6B125E9653100F3DBCA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		72CB1B8F25E1856D00408918 /* Products */ = {
+		72F5E6B125E9653100F3DBCA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				72CB1B8E25E1856D00408918 /* Unpwn.app */,
+				72F5E6B025E9653100F3DBCA /* Unpwn.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		72CB1B9025E1856D00408918 /* Unpwn */ = {
+		72F5E6B225E9653100F3DBCA /* Unpwn */ = {
 			isa = PBXGroup;
 			children = (
-				72CB1B9125E1856D00408918 /* UnpwnApp.swift */,
-				72CB1B9325E1856D00408918 /* ContentView.swift */,
-				72CB1B9525E1857300408918 /* Assets.xcassets */,
-				72CB1B9A25E1857300408918 /* Info.plist */,
-				72CB1B9725E1857300408918 /* Preview Content */,
+				7259689B25E96641003665C9 /* SHA1.swift */,
+				72F5E6BC25E9653200F3DBCA /* Assets.xcassets */,
+				72F5E6B925E9653100F3DBCA /* Main.storyboard */,
+				72F5E6B725E9653100F3DBCA /* ViewController.swift */,
+				721934FD25EAAB74004A7A25 /* aboutUnpwnViewController.swift */,
+				725968A625E9812D003665C9 /* apiView.swift */,
+				725968AA25E988F5003665C9 /* generatorView.swift */,
+				725968AD25E989E7003665C9 /* homeView.swift */,
+				72F5E6B525E9653100F3DBCA /* SceneDelegate.swift */,
+				72F5E6B325E9653100F3DBCA /* AppDelegate.swift */,
+				72F5E6BE25E9653200F3DBCA /* LaunchScreen.storyboard */,
+				72F5E6C125E9653300F3DBCA /* Info.plist */,
 			);
 			path = Unpwn;
-			sourceTree = "<group>";
-		};
-		72CB1B9725E1857300408918 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				72CB1B9825E1857300408918 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		72CB1B8D25E1856D00408918 /* Unpwn */ = {
+		72F5E6AF25E9653100F3DBCA /* Storyboard_Unpwn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72CB1B9D25E1857300408918 /* Build configuration list for PBXNativeTarget "Unpwn" */;
+			buildConfigurationList = 72F5E6C425E9653300F3DBCA /* Build configuration list for PBXNativeTarget "Storyboard_Unpwn" */;
 			buildPhases = (
-				72CB1B8A25E1856D00408918 /* Sources */,
-				72CB1B8B25E1856D00408918 /* Frameworks */,
-				72CB1B8C25E1856D00408918 /* Resources */,
+				72F5E6AC25E9653100F3DBCA /* Sources */,
+				72F5E6AD25E9653100F3DBCA /* Frameworks */,
+				72F5E6AE25E9653100F3DBCA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Unpwn;
-			productName = Unpwn;
-			productReference = 72CB1B8E25E1856D00408918 /* Unpwn.app */;
+			name = Storyboard_Unpwn;
+			packageProductDependencies = (
+				7259689825E965EA003665C9 /* SwiftyJSON */,
+			);
+			productName = Storyboard_Unpwnd;
+			productReference = 72F5E6B025E9653100F3DBCA /* Unpwn.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		72CB1B8625E1856D00408918 /* Project object */ = {
+		72F5E6A825E9653100F3DBCA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					72CB1B8D25E1856D00408918 = {
+					72F5E6AF25E9653100F3DBCA = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 72CB1B8925E1856D00408918 /* Build configuration list for PBXProject "Unpwn" */;
+			buildConfigurationList = 72F5E6AB25E9653100F3DBCA /* Build configuration list for PBXProject "Unpwn" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,42 +131,71 @@
 				en,
 				Base,
 			);
-			mainGroup = 72CB1B8525E1856C00408918;
-			productRefGroup = 72CB1B8F25E1856D00408918 /* Products */;
+			mainGroup = 72F5E6A725E9653100F3DBCA;
+			packageReferences = (
+				7259689725E965EA003665C9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 72F5E6B125E9653100F3DBCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				72CB1B8D25E1856D00408918 /* Unpwn */,
+				72F5E6AF25E9653100F3DBCA /* Storyboard_Unpwn */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		72CB1B8C25E1856D00408918 /* Resources */ = {
+		72F5E6AE25E9653100F3DBCA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72CB1B9925E1857300408918 /* Preview Assets.xcassets in Resources */,
-				72CB1B9625E1857300408918 /* Assets.xcassets in Resources */,
+				72F5E6C025E9653200F3DBCA /* LaunchScreen.storyboard in Resources */,
+				72BD51B325E9AB1100D57389 /* Assets.xcassets in Resources */,
+				72F5E6BB25E9653100F3DBCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		72CB1B8A25E1856D00408918 /* Sources */ = {
+		72F5E6AC25E9653100F3DBCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72CB1B9425E1856D00408918 /* ContentView.swift in Sources */,
-				72CB1B9225E1856D00408918 /* UnpwnApp.swift in Sources */,
+				725968AB25E988F5003665C9 /* generatorView.swift in Sources */,
+				725968A725E9812D003665C9 /* apiView.swift in Sources */,
+				72F5E6B825E9653100F3DBCA /* ViewController.swift in Sources */,
+				721934FE25EAAB74004A7A25 /* aboutUnpwnViewController.swift in Sources */,
+				72F5E6B425E9653100F3DBCA /* AppDelegate.swift in Sources */,
+				7259689C25E96641003665C9 /* SHA1.swift in Sources */,
+				72F5E6B625E9653100F3DBCA /* SceneDelegate.swift in Sources */,
+				725968AE25E989E7003665C9 /* homeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		72F5E6B925E9653100F3DBCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72F5E6BA25E9653100F3DBCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72F5E6BE25E9653200F3DBCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72F5E6BF25E9653200F3DBCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		72CB1B9B25E1857300408918 /* Debug */ = {
+		72F5E6C225E9653300F3DBCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,7 +256,7 @@
 			};
 			name = Debug;
 		};
-		72CB1B9C25E1857300408918 /* Release */ = {
+		72F5E6C325E9653300F3DBCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,45 +311,49 @@
 			};
 			name = Release;
 		};
-		72CB1B9E25E1857300408918 /* Debug */ = {
+		72F5E6C525E9653300F3DBCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Unpwn.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Unpwn/Preview Content\"";
 				DEVELOPMENT_TEAM = 28238DLB46;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Unpwn/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Sloth.Unpwn;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Unpwn;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		72CB1B9F25E1857300408918 /* Release */ = {
+		72F5E6C625E9653300F3DBCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Unpwn.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Unpwn/Preview Content\"";
 				DEVELOPMENT_TEAM = 28238DLB46;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Unpwn/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Sloth.Unpwn;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Unpwn;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,25 +362,44 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		72CB1B8925E1856D00408918 /* Build configuration list for PBXProject "Unpwn" */ = {
+		72F5E6AB25E9653100F3DBCA /* Build configuration list for PBXProject "Unpwn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72CB1B9B25E1857300408918 /* Debug */,
-				72CB1B9C25E1857300408918 /* Release */,
+				72F5E6C225E9653300F3DBCA /* Debug */,
+				72F5E6C325E9653300F3DBCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72CB1B9D25E1857300408918 /* Build configuration list for PBXNativeTarget "Unpwn" */ = {
+		72F5E6C425E9653300F3DBCA /* Build configuration list for PBXNativeTarget "Storyboard_Unpwn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72CB1B9E25E1857300408918 /* Debug */,
-				72CB1B9F25E1857300408918 /* Release */,
+				72F5E6C525E9653300F3DBCA /* Debug */,
+				72F5E6C625E9653300F3DBCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7259689725E965EA003665C9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7259689825E965EA003665C9 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7259689725E965EA003665C9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 72CB1B8625E1856D00408918 /* Project object */;
+	rootObject = 72F5E6A825E9653100F3DBCA /* Project object */;
 }
