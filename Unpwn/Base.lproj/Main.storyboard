@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2sL-Oe-ZQa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Back-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Unpwn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9B-hb-h4Z">
+                                <rect key="frame" x="20" y="168" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Unpwn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapGenerator" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aon-7d-uqc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlS-n7-Ftf">
+                                <rect key="frame" x="20" y="206" width="131" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Am i been hacked?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapApi" destination="BYZ-38-t0r" eventType="touchUpInside" id="lCG-X9-x7v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-ct-uoN">
+                                <rect key="frame" x="20" y="249" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About Unpwn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapAboutUnpwn" destination="BYZ-38-t0r" eventType="touchUpInside" id="AN6-Cf-uuV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Back" id="2pg-jP-qfd">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="y1i-a7-jbs"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d4d-e4-uHC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2sL-Oe-ZQa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="aye-89-PpO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="x3L-Cx-CKL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFd-Ib-I1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="118.52678571428571"/>
+        </scene>
+        <!--About Unpwn-->
+        <scene sceneID="HnA-Ny-a3m">
+            <objects>
+                <viewController storyboardIdentifier="abouUnpwn" id="vhI-T7-8Gv" customClass="aboutUnpwnViewController" customModule="Unpwn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="94Q-rp-zsv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" text="Unpwn is a lightweight Password manager that keeps your accounts safe from being pwned. " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGf-Cu-bbn">
+                                <rect key="frame" x="20" y="158" width="374" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jt4-Za-qvA">
+                                <rect key="frame" x="20" y="208" width="374" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="xj0-DV-nzz"/>
+                                </constraints>
+                                <string key="text">With a simple UI, Unpwn comes to help people to secure their accounts, creating passwords based on user's preferences and checking if a specific password has been part of a data breach.
+</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unpwn will never store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTs-8q-Weh">
+                                <rect key="frame" x="104" y="404" width="207" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="zWL-fn-tRq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your passwords away" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgB-zf-Niz">
+                                <rect key="frame" x="109" y="446" width="197" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="5ng-1y-lQP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yee-Dl-hfU">
+                                <rect key="frame" x="297" y="589" width="97" height="30"/>
+                                <state key="normal" title="© Sloth, 2020">
+                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSloth" destination="vhI-T7-8Gv" eventType="touchUpInside" id="SFm-an-0TJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="About Unpwn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAa-zW-hsR">
+                                <rect key="frame" x="20" y="93" width="217" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your privacy is safe!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4q-i5-zON">
+                                <rect key="frame" x="50" y="355" width="315" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ej-53-A1l">
+                                <rect key="frame" x="18" y="837" width="370" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <state key="normal" title="Password checker powered by Troy Hunt's &quot;Have I Been Pwned?&quot; API">
+                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapHIBP" destination="vhI-T7-8Gv" eventType="touchUpInside" id="57f-6E-HHy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-wd-lyW">
+                                <rect key="frame" x="33" y="477" width="349" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="uIh-Ir-f30"/>
+                                </constraints>
+                                <string key="text">After pressing the button to search among a secure database if your password had being hacked, Unpwn will immediately encrypt your password.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hf3-sM-m2K"/>
+                        <color key="backgroundColor" red="0.061945885727086036" green="0.061945885727086036" blue="0.061945885727086036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2ej-53-A1l" firstAttribute="centerX" secondItem="hf3-sM-m2K" secondAttribute="centerX" constant="-4" id="3CF-gF-Utn"/>
+                            <constraint firstItem="2ej-53-A1l" firstAttribute="leading" secondItem="hf3-sM-m2K" secondAttribute="leading" constant="18" id="45V-Pe-YWY"/>
+                            <constraint firstItem="rd8-wd-lyW" firstAttribute="top" secondItem="hf3-sM-m2K" secondAttribute="top" constant="433" id="4Wr-Fu-q2Z"/>
+                            <constraint firstItem="xAa-zW-hsR" firstAttribute="top" secondItem="hf3-sM-m2K" secondAttribute="top" constant="49" id="4cL-Cc-P43"/>
+                            <constraint firstItem="jt4-Za-qvA" firstAttribute="top" secondItem="hf3-sM-m2K" secondAttribute="top" constant="164" id="8bb-lx-lVA"/>
+                            <constraint firstItem="xAa-zW-hsR" firstAttribute="leading" secondItem="hf3-sM-m2K" secondAttribute="leading" constant="20" id="AGg-W1-7jp"/>
+                            <constraint firstItem="hf3-sM-m2K" firstAttribute="trailing" secondItem="Yee-Dl-hfU" secondAttribute="trailing" constant="20" id="EWX-Vl-NXl"/>
+                            <constraint firstItem="2ej-53-A1l" firstAttribute="centerX" secondItem="jt4-Za-qvA" secondAttribute="centerX" constant="-4" id="F8F-Qf-084"/>
+                            <constraint firstItem="2ej-53-A1l" firstAttribute="centerX" secondItem="xGf-Cu-bbn" secondAttribute="centerX" constant="-4" id="FfX-4u-Llk"/>
+                            <constraint firstItem="rgB-zf-Niz" firstAttribute="top" secondItem="hf3-sM-m2K" secondAttribute="top" constant="402" id="QBO-Am-Y8u"/>
+                            <constraint firstItem="CTs-8q-Weh" firstAttribute="top" secondItem="hf3-sM-m2K" secondAttribute="top" constant="360" id="UuM-eH-g5a"/>
+                            <constraint firstItem="hf3-sM-m2K" firstAttribute="trailing" secondItem="rd8-wd-lyW" secondAttribute="trailing" constant="32" id="W5f-KU-QVG"/>
+                            <constraint firstItem="CTs-8q-Weh" firstAttribute="leading" secondItem="hf3-sM-m2K" secondAttribute="leading" constant="104" id="WcS-Kl-OnV"/>
+                            <constraint firstItem="rd8-wd-lyW" firstAttribute="leading" secondItem="hf3-sM-m2K" secondAttribute="leading" constant="33" id="bhD-pu-eh3"/>
+                            <constraint firstItem="xGf-Cu-bbn" firstAttribute="leading" secondItem="hf3-sM-m2K" secondAttribute="leading" constant="20" id="dg4-CX-swh"/>
+                            <constraint firstItem="jt4-Za-qvA" firstAttribute="leading" secondItem="hf3-sM-m2K" secondAttribute="leading" constant="20" id="dkn-HE-6e3"/>
+                            <constraint firstItem="A4q-i5-zON" firstAttribute="top" secondItem="hf3-sM-m2K" secondAttribute="top" constant="311" id="lBc-YQ-Ncu"/>
+                            <constraint firstItem="Yee-Dl-hfU" firstAttribute="top" secondItem="hf3-sM-m2K" secondAttribute="top" constant="545" id="lrP-IM-kS9"/>
+                            <constraint firstItem="xGf-Cu-bbn" firstAttribute="top" secondItem="hf3-sM-m2K" secondAttribute="top" constant="114" id="p1Y-XQ-0eR"/>
+                            <constraint firstItem="2ej-53-A1l" firstAttribute="bottom" secondItem="hf3-sM-m2K" secondAttribute="bottom" id="tJc-40-AcH"/>
+                            <constraint firstItem="A4q-i5-zON" firstAttribute="centerX" secondItem="hf3-sM-m2K" secondAttribute="centerX" id="ug6-7A-Trr"/>
+                            <constraint firstItem="rgB-zf-Niz" firstAttribute="leading" secondItem="hf3-sM-m2K" secondAttribute="leading" constant="109" id="x9L-GL-Z9v"/>
+                            <constraint firstItem="A4q-i5-zON" firstAttribute="leading" secondItem="hf3-sM-m2K" secondAttribute="leading" constant="50" id="zLa-00-ETC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Unpwn" largeTitleDisplayMode="always" id="Ug4-Ha-RCK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4t-II-4k5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1811.594202898551" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

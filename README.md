@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-# Unpwnd
-iOS Password generator
-=======
+
 # Unpwn
 _As simple as secure_
 
-**Unpwn** is a simple iOS Password generator that helps to keep your' accounts safe from being pwned.  
+**Unpwn** is a simple iOS Password generator that helps to keep your accounts safe from being pwned.  
 
 ## Versions
 ### Version 1.0 - Hello world update
@@ -29,4 +26,3 @@ At this part of the project, Unpwn's development is currently more functionality
 In this update the code has been commented as well as some words has been corrected.
 
 © Sloth. 
->>>>>>> 342136c3dba0bee53f5a6765728430b3b8b27706
